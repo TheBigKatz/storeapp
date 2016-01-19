@@ -1,13 +1,12 @@
 <div>
 
-<h1><center><strong> My Food Store! </strong></center></h1>
+<h1><center><strong><font color="white"><u> Welcome To My Store</u></font></strong></center></h1>
 
 <% @products.each do |product| %>
 <h3><%= link_to product.name.to_s.upcase, "/products/#{product.id}" %></h3>
-<h3><%= product.price %></h3>
-<img src="<%= product.image %>"></h3>
-<h3><%= product.description %></h3>
-
+<h3><font color="white"><%= product.price %></font></h3>
+<img src="<%= product.image %>" border="5" <img style="border:5px groove blue;"></h3>
+<h3><font color="white"><%= product.description %></font></h3>
 <%= link_to "New", "/products/new" %>
 <%= link_to "Delete", "/products/#{product.id}", method: :delete %>
 <%= link_to 'Edit', "/products/#{product.id}/edit" %>

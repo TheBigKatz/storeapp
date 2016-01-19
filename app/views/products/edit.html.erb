@@ -1,26 +1,26 @@
-<h1> Update your product </h1>
+<h1><font color="white"> Update your product </font></h1>
 
 <%= form_tag "/products/#{@product.id}", method: :patch do %>
 
-	<div> 
+	<div><font color="#5333F7">
 	  <%= label_tag :name %>
 	  <%= text_field_tag :name, @product.name %>
-	</div>
+	</font></div>
 
-	<div>
+	<div><font color="#5333F7">
 	  <%= label_tag :price %>
 	  <%= text_field_tag :price, @product.price %>
-	</div>
+	</font></div>
 
-	<div>
+	<div><font color="#5333F7">
 	  <%= label_tag :image %>
 	  <%= text_field_tag :image, @product.image %>
-	</div>
+	</font></div>
 
-	<div>
+	<div><font color="#5333F7">
 	  <%= label_tag :description %>
 	  <%= text_field_tag :description, @product.description %>
-	</div>
+	</font></div>
 
 	<%= submit_tag "Update this Product" %>
 
