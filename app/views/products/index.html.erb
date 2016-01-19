@@ -1,12 +1,15 @@
 <div>
 
-<h1> My Anything Store! </h1>
+<h1><center><strong> My Food Store! </strong></center></h1>
 
 <% @products.each do |product| %>
 <h3><%= link_to product.name.to_s.upcase, "/products/#{product.id}" %></h3>
 <h3><%= product.price %></h3>
 <img src="<%= product.image %>"></h3>
 <h3><%= product.description %></h3>
-<h5><a data-confirm="Are You Sure?" data-method="delete"     href="/products/<%= product.id %>" rel="nofollow">Delete</a></h5>
+
+<%= link_to "New", "/products/new" %>
+<%= link_to "Delete", "/products/#{product.id}", method: :delete %>
+<%= link_to 'Edit', "/products/#{product.id}/edit" %>
 <% end %>
 </div>
