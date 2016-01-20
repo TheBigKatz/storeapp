@@ -18,9 +18,8 @@
 	</div>
 <% end %>
 
-<%= yield %>
 
-</body>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -34,21 +33,22 @@
       <a class="navbar-brand" href="/products">Home</a>
     </div>
 
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/products/new">Enter New Product <span class="sr-only">(current)</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=BLmboHI9sd4">Don't Click Here</a></li>
+        <li><a href="https://www.youtube.com/watch?v=e35AQK014tI" target="_blank">Don't Click Here</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
-          <li><a href="http://mymacaroniandcheese.info/15-fun-facts-about-macaroni-and-cheese">Facts On Mac 'N Cheese</a></li>
+          <li><a href="http://mymacaroniandcheese.info/15-fun-facts-about-macaroni-and-cheese" target="_blank">Facts On Mac 'N Cheese</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="http://www.nola.com/food/index.ssf/2014/11/11_different_tomato_soup_recip.html">Different Kinds of Tomato Soup</a></li>
+          <li><a href="http://www.nola.com/food/index.ssf/2014/11/11_different_tomato_soup_recip.html" target="_blank">Different Kinds of Tomato Soup</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="http://nymag.com/listings/recipe/strip-steak/">New York Strip At Home</a></li>
+          <li><a href="http://nymag.com/listings/recipe/strip-steak/" target="_blank">New York Strip At Home</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="http://mobile-cuisine.com/did-you-know/taco-fun-facts/">Fun Facts About Tacos</a></li>
+            <li><a href="http://mobile-cuisine.com/did-you-know/taco-fun-facts/" target="_blank">Fun Facts About Tacos</a></li>
           </ul>
         </li>
       </ul>
@@ -63,17 +63,19 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="http://mymacaroniandcheese.info/15-fun-facts-about-macaroni-and-cheese">Facts On Mac 'N Cheese</a></li>
+            <li><a href="http://mymacaroniandcheese.info/15-fun-facts-about-macaroni-and-cheese" target="_blank">Facts On Mac 'N Cheese</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="http://www.nola.com/food/index.ssf/2014/11/11_different_tomato_soup_recip.html">Different Kinds of Tomato Soup</a></li>
+            <li><a href="http://www.nola.com/food/index.ssf/2014/11/11_different_tomato_soup_recip.html" target="_blank">Different Kinds of Tomato Soup</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="http://nymag.com/listings/recipe/strip-steak/">New York Strip At Home</a></li>
+            <li><a href="http://nymag.com/listings/recipe/strip-steak/" target="_blank">New York Strip At Home</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="http://mobile-cuisine.com/did-you-know/taco-fun-facts/">Fun Facts About Tacos</a></li>
+            <li><a href="http://mobile-cuisine.com/did-you-know/taco-fun-facts/" target="_blank">Fun Facts About Tacos</a></li>
           </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<%= yield %>
+</body>
 </html>
