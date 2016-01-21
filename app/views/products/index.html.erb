@@ -8,9 +8,10 @@
 		  <div class="thumbnail">
 
 			<h3><%= link_to product.name.to_s.upcase, "/products/#{product.id}" %></h3>
-			<h3><font color="white"><%= product.price %></font></h3>
+			<h3><font color="black"><%= product.price %></font></h3>
+			<h3><font color="black"><%= @sale_message %></font></h3>
 			<img src="<%= product.image %>" border="5" <img style="border:5 groove grey;"></h3>
-			<h3><font color="white"><%= product.description %></font></h3>
+			<h3><font color="black"><%= product.description %></font></h3>
 
 			<%= link_to "New", "/products/new" %>
 			<%= link_to "Delete", "/products/#{product.id}", method: :delete %>

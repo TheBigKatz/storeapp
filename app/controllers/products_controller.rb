@@ -6,9 +6,8 @@ class ProductsController < ApplicationController
 
 	def show 
 		@product = Product.find_by(id: params[:id])
+		@sale_message = 
 
-		
-	end
 
 	def new
 	end
@@ -53,4 +52,4 @@ class ProductsController < ApplicationController
 	end
 
 end
-
+end

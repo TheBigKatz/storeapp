@@ -1,6 +1,11 @@
-<h1><font color="white"><%= @product.name %></font></h3>
-<h2><font color="white"><%= @product.price %></font></h3>
+
+<h2><font color="black"><%= @product.sale_message %></h2>
+<h1><font color="black"><%= @product.name %></font></h1>
+<h3>Price: $<font color="black"><%= @product.price %></font></h3>
+<h3>Tax: $<font color="black"><%= @product.tax %></font></h3>
+<h3>Total: $<font color="black"><%= @product.total %></font></h3>
+<h3><font color="black"><%= @sale_message %></font></h3>
 <img src="<%= @product.image %>"></h3>
-<h3><font color="white"><%= @product.description %></font></h3>
+<h3><font color="black"><%= @product.description %></font></h3>
 
 <%= link_to "Home", "/products" %>
