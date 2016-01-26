@@ -1,13 +1,17 @@
 class ProductsController < ApplicationController
 
 	def index
+		if params[:product] == "sort"
+			@products = Product.order(price: :desc)
+		else
 		@products = Product.all
+		end 
 	end
 
 	def show 
 		@product = Product.find_by(id: params[:id])
-		@sale_message = 
-
+		@sale_message = nil #fix
+	end
 
 	def new
 	end
@@ -51,5 +55,5 @@ class ProductsController < ApplicationController
 		redirect_to "/products"
 	end
 
-end
+
 end

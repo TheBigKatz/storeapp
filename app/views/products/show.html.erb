@@ -4,8 +4,8 @@
 <h3>Price: $<font color="black"><%= @product.price %></font></h3>
 <h3>Tax: $<font color="black"><%= @product.tax %></font></h3>
 <h3>Total: $<font color="black"><%= @product.total %></font></h3>
+<h3>Supplier: <font color="black"><%= @product.supplier.name %></font></h3>
 <h3><font color="black"><%= @sale_message %></font></h3>
-<img src="<%= @product.image %>"></h3>
 <h3><font color="black"><%= @product.description %></font></h3>
 
 <%= link_to "Home", "/products" %>
