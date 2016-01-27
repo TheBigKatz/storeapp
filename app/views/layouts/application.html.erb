@@ -13,8 +13,7 @@
 <% flash.each do |name, message| %>
 
 	<div class="alert alert-<%= name %>" role="alert">
-	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	  New Product Updated!
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span><%= message %></button>
 	</div>
 <% end %>
 
@@ -36,12 +35,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/products/new">Enter New Product <span class="sr-only">(current)</span></a></li>
-        <li><a href="/products?product=sort" target="_blank">Highest To Lowest</a></li>
+        <li class="active"><a href="/users/sign_up">Sign Up <span class="sr-only">(current)</span></a></li>
+        <li><a href="/users/sign_in">Sign In</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
-          <li><a href="http://mymacaroniandcheese.info/15-fun-facts-about-macaroni-and-cheese" target="_blank">Facts On Mac 'N Cheese</a></li>
+          <li><a href="/users/sign_out" target="_blank" data-method="delete">Sign Out</a></li>
           <li role="separator" class="divider"></li>
           <li><a href="http://www.nola.com/food/index.ssf/2014/11/11_different_tomato_soup_recip.html" target="_blank">Different Kinds of Tomato Soup</a></li>
           <li role="separator" class="divider"></li>
